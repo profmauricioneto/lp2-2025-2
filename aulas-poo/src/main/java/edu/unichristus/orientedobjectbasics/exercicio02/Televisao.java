@@ -18,6 +18,11 @@ public class Televisao {
         this.canal = controle.mudarCanal(canal);
     }
 
+    public void aumentarVolume() {
+        this.volume = controle.aumentarVolume();
+    }
+    //
+
     public static void main(String[] args) {
         Televisao tv = new Televisao();
     }

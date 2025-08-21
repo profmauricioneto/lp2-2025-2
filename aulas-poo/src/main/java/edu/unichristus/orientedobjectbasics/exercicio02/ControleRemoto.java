@@ -9,28 +9,32 @@ public class ControleRemoto {
         this.volume = volume;
     }
 
-    public void aumentarVolume() {
+    public int aumentarVolume() {
         if (volume < 100) {
             this.volume++;
         }
+        return volume;
     }
 
-    public void diminuirVolume() {
+    public int diminuirVolume() {
         if (volume > 0) {
             this.volume--;
         }
+        return volume;
     }
 
-    public void aumentarCanal() {
+    public int aumentarCanal() {
         if (canal < 100) {
             this.canal++;
         }
+        return canal;
     }
 
-    public void diminuirCanal() {
+    public int diminuirCanal() {
         if (canal > 0) {
             this.canal--;
         }
+        return canal;
     }
 
     public int mudarCanal(int canal) {
