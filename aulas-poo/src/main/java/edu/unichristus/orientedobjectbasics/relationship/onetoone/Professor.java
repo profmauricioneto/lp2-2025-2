@@ -5,8 +5,9 @@ public class Professor {
     public int id;
     public Disciplina disciplina;
 
-    public Professor(String nomeProfessor, int id) {
+    public Professor(String nomeProfessor, int id, Disciplina disciplina) {
         this.nomeProfessor = nomeProfessor;
         this.id = id;
+        this.disciplina = disciplina;
     }
 }

@@ -2,11 +2,12 @@ package edu.unichristus.orientedobjectbasics.relationship.onetoone;
 
 public class Main {
     public static void main(String[] args) {
-        Professor mauricio = new Professor("Mauricio Neto", 1);
-        Professor sombra = new Professor("Thiago Sombra", 2);
 
         Disciplina POO = new Disciplina("POO", 123);
         Disciplina Mobile = new Disciplina("Mobile", 321);
+
+        Professor mauricio = new Professor("Mauricio Neto", 1, POO);
+        Professor sombra = new Professor("Thiago Sombra", 2, Mobile);
 
         POO.setProfessor(mauricio);
         Mobile.setProfessor(sombra);
