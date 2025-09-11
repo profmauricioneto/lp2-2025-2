@@ -1,4 +1,4 @@
-package edu.unichristus.inheritance.exercicio07;
+package edu.unichristus.inheritance.exercicio04;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,5 +19,11 @@ public class Departamento {
 
     protected int getId() {
         return id;
+    }
+
+    public void showPessoasDepartamento() {
+        for (Pessoa pessoa: pessoas) {
+            System.out.println(pessoa.getNome());
+        }
     }
 }

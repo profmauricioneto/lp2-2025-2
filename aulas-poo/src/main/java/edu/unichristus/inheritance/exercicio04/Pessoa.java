@@ -1,4 +1,4 @@
-package edu.unichristus.inheritance.exercicio07;
+package edu.unichristus.inheritance.exercicio04;
 
 public class Pessoa {
     private int id;
@@ -16,5 +16,9 @@ public class Pessoa {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
     }
 }
