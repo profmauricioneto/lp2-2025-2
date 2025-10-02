@@ -12,4 +12,8 @@ public class Imovel {
     public double getPreco() {
         return preco;
     }
+
+    public double calcularImovel() {
+        return preco;
+    }
 }

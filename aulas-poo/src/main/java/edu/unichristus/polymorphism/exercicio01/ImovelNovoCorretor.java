@@ -8,8 +8,12 @@ public class ImovelNovoCorretor extends ImovelNovo {
         this.corretagem = corretagem;
     }
 
+//    @Override
+//    public double calculoImovelNovo() {
+//        return (super.calculoImovelNovo() + getPreco()*corretagem);
+//    }
     @Override
-    public double calculoImovelNovo() {
-        return (super.calculoImovelNovo() + getPreco()*corretagem);
+    public double calcularImovel() {
+        return (super.calcularImovel() + getPreco()*corretagem);
     }
 }

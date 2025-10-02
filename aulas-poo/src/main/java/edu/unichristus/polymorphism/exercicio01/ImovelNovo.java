@@ -12,7 +12,11 @@ public class ImovelNovo extends Imovel {
         return adicional;
     }
 
-    public double calculoImovelNovo() {
+//    public double calculoImovelNovo() {
+//        return (getPreco() + getPreco()*adicional);
+//    }
+    @Override
+    public double calcularImovel() {
         return (getPreco() + getPreco()*adicional);
     }
 }

@@ -12,7 +12,12 @@ public class ImovelVelho extends Imovel {
         return desconto;
     }
 
-    public double calcularImovelVelho() {
+//    public double calcularImovelVelho() {
+//        return (getPreco() - getPreco()*desconto);
+//    }
+
+    @Override
+    public double calcularImovel() {
         return (getPreco() - getPreco()*desconto);
     }
 }
