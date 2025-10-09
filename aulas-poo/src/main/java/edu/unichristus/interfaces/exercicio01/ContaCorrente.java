@@ -1,13 +1,17 @@
 package edu.unichristus.interfaces.exercicio01;
 
-public class ContaCorrente implements OperacoesBancarias {
+public class ContaCorrente implements OperacoesBancarias, OperacoesPessoais {
     protected double montante;
+    protected String nome;
+    protected int id;
 
-    public ContaCorrente() {
+    public ContaCorrente(String nome) {
         this.montante = 0;
+        this.nome = nome;
     }
-    public ContaCorrente(double montante) {
+    public ContaCorrente(double montante, String nome) {
         this.montante = montante;
+        this.nome = nome;
     }
 
     @Override
@@ -27,5 +31,25 @@ public class ContaCorrente implements OperacoesBancarias {
         } else {
             System.out.println("Saldo insuficiente");
         }
+    }
+
+    @Override
+    public String getNome() {
+        return nome;
+    }
+
+    @Override
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(int id) {
+        this.id = id;
     }
 }

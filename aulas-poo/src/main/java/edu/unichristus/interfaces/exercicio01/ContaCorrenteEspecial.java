@@ -1,11 +1,11 @@
 package edu.unichristus.interfaces.exercicio01;
 
 public class ContaCorrenteEspecial extends ContaCorrente {
-    public ContaCorrenteEspecial() {
-        super();
+    public ContaCorrenteEspecial(String nome) {
+        super(nome);
     }
-    public ContaCorrenteEspecial(double montante) {
-        super(montante);
+    public ContaCorrenteEspecial(double montante, String nome) {
+        super(montante, nome);
     }
 
     @Override
