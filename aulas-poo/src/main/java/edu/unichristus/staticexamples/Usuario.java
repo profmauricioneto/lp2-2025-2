@@ -1,4 +1,4 @@
-package edu.unichristus.staticexamples;
+package edu.unichristus.solid.badexamples;
 
 public class Usuario {
     private static int idClasse = 0;
